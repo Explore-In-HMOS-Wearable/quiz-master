@@ -153,7 +153,7 @@ export default struct SpinTheWheelsScreen {
       entries.add(new PieEntry(range,
         this.parties[i % this.parties.length]));
     }
-    let dataSet: PieDataSet = new PieDataSet(entries, "Election Results");
+    let dataSet: PieDataSet = new PieDataSet(entries, 'Election Results');
     dataSet.setSliceSpace(1);
     dataSet.setIconsOffset(new MPPointF(0, 40));
     dataSet.setSelectionShift(0);
@@ -189,10 +189,10 @@ export default struct SpinTheWheelsScreen {
 
     let options: AnimatorOptions = {
       duration: 11000,
-      easing: "ease",
+      easing: 'ease',
       delay: 0,
-      fill: "forwards",
-      direction: "normal",
+      fill: 'forwards',
+      direction: 'normal',
       begin: currentAngle,
       end: end,
       iterations: 1

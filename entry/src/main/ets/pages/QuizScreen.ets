@@ -139,7 +139,7 @@ export default struct QuizScreen {
     this.correctCount++;
     this.avPlayer = await media.createAVPlayer();
     this.setAVPlayerCallback(this.avPlayer);
-    const context = getContext(this) as common.UIAbilityContext;
+    const context = this.getUIContext().getHostContext() as Context;
     const file = await context.resourceManager.getRawFd('correct_answer.mp3');
     const avFileDesc: media.AVFileDescriptor = {
       fd: file.fd, offset: file.offset, length: file.length
@@ -155,7 +155,7 @@ export default struct QuizScreen {
 
     this.avPlayer = await media.createAVPlayer();
     this.setAVPlayerCallback(this.avPlayer);
-    const context = getContext(this) as common.UIAbilityContext;
+    const context = this.getUIContext().getHostContext() as Context
     const file = await context.resourceManager.getRawFd('wrong_answer.mp3');
     const avFileDesc: media.AVFileDescriptor = {
       fd: file.fd, offset: file.offset, length: file.length
@@ -173,7 +173,7 @@ export default struct QuizScreen {
     this.pages.pop();
     this.avPlayer = await media.createAVPlayer();
     this.setAVPlayerCallback(this.avPlayer);
-    const context = getContext(this) as common.UIAbilityContext;
+    const context = this.getUIContext().getHostContext() as Context
     const file = await context.resourceManager.getRawFd('quiz_complete.mp3');
     const avFileDesc: media.AVFileDescriptor = {
       fd: file.fd, offset: file.offset, length: file.length
@@ -195,8 +195,6 @@ export default struct QuizScreen {
   async aboutToAppear(): Promise<void> {
 
    this.topic =  AppStorage.get('selectedTopic') as string
-    console.log('topic : ', this.topic);
-
 
     this.questions = new Questions();
     this.questionList = this.questions.callMethodByName(this.topic);

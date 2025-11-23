@@ -1,5 +1,5 @@
-import { CustomButton } from "../components/CustomButton";
-import { Score } from "../model/Score";
+import { CustomButton } from '../components/CustomButton';
+import { Score } from '../model/Score';
 
 @Component
 export struct ScoreScreen {

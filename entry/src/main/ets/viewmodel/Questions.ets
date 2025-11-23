@@ -515,7 +515,7 @@ export class Questions {
         ]
       },
       {
-        question: 'Who painted "The Scream"?',
+        question: 'Who painted `The Scream`?',
         options: [
           {
             value: 'Gustav Klimt',
@@ -738,7 +738,7 @@ export class Questions {
   cinemaList(): Question[] {
     const questionList: Question[] = [
       {
-        question: 'Who directed "Pulp Fiction"?',
+        question: 'Who directed `Pulp Fiction`?',
         options: [
           {
             value: 'Steven Spielberg',
@@ -759,7 +759,7 @@ export class Questions {
         ]
       },
       {
-        question: 'Which movie has the line "I\'ll be back"?',
+        question: 'Which movie has the line `I\'ll be back`?',
         options: [
           {
             value: 'Terminator',
@@ -822,7 +822,7 @@ export class Questions {
         ]
       },
       {
-        question: 'What is "Citizen Kane" about?',
+        question: 'What is `Citizen Kane` about?',
         options: [
           {
             value: 'A politician',
@@ -913,7 +913,7 @@ export class Questions {
   musicList(): Question[] {
     const questionList: Question[] = [
       {
-        question: 'Who is the "King of Pop"?',
+        question: 'Who is the `King of Pop`?',
         options: [
           {
             value: 'Elvis Presley',
@@ -955,7 +955,7 @@ export class Questions {
         ]
       },
       {
-        question: 'Who sang "Bohemian Rhapsody"?',
+        question: 'Who sang `Bohemian Rhapsody`?',
         options: [
           {
             value: 'The Beatles',
@@ -1018,7 +1018,7 @@ export class Questions {
         ]
       },
       {
-        question: 'Who composed "Symphony No. 5"?',
+        question: 'Who composed `Symphony No. 5`?',
         options: [
           {
             value: 'Mozart',
